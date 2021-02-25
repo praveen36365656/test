@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+
+ <title>Exaze</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+    	.pic-tit{
+    		font-size: 40px;
+    	}
+    	body { background-color: #f1f1f1; }
+
+.demo-wrap .demo {
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-user-select: none;
+}
+
+.slide-wrap {
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-wrap li {
+  display: none;
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px #888;
+      background: #fff;
+    border: 1px solid #ccc;
+}
+
+.slide-wrap .inner {
+  position: relative;
+  border-radius: 5px;
+}
+
+.slide-wrap .inner a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.slide-wrap .pic-tit {
+  font-size: 14px;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background: #1ca297;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  z-index: 99999;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
+}
+
+.slide-wrap img {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.slide-wrap .pos1 {
+  display: block;
+  width: 180px;
+  height: 236px;
+  top: 60px;
+  left: 6%;
+  z-index: 1;
+}
+
+.slide-wrap .pos2 {
+  display: block;
+  width: 220px;
+  height: 286px;
+  top: 35px;
+  left: 20%;
+  z-index: 2;
+}
+
+.slide-wrap .pos3 {
+  display: block;
+  width: 300px;
+  height: 390px;
+  top: 0;
+  left: 35%;
+  z-index: 3;
+}
+
+.slide-wrap .pos4 {
+  display: block;
+  width: 220px;
+  height: 286px;
+  top: 35px;
+  right: 20%;
+  z-index: 2;
+}
+
+.slide-wrap .pos5 {
+  display: block;
+  width: 180px;
+  height: 236px;
+  top: 60px;
+  right: 6%;
+  z-index: 1;
+}
+
+.slide-wrap .inner {
+  overflow: hidden;
+  position: relative;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #384047;
+  color: #fff;
+  position: absolute;
+  top: 160px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+}
+
+.prev {
+  left: 330px;
+  background-position: 0px 0px;
+}
+
+.next {
+  right: 330px;
+  background-position: -52px 0px;
+}
+.content{
+	width: 100%;
+}
+
+.tag {
+	display: block;
+    margin: 5px;
+    text-align: center;
+    color: #000;}
+    </style>
+
+	</head>
+
+
+	<div class="content">
+		<div class="demo-wrap">
+			<div id="demo" class="demo">
+				<ul class="slide-wrap" id="example">
+					<li class="pos1">
+						<div class="inner">
+							<a href="#">
+								<img src="image.jpg">
+								<span class="tag">Home</span>
+							</a>
+						</div>
+					</li>
+					<li class="pos2">
+						<div class="inner">
+							<a href="#">
+								<img src="image.jpg">
+								<span class="tag">MOBILE</span>
+							</a>
+						</div>
+					</li>
+					<li class="pos3">
+						<div class="inner">
+							<a href="#">
+								<img src="image.jpg">
+								<span class="tag">PHONE</span>
+								
+							</a>
+						</div>
+					</li>
+					<li class="pos4">
+						<div class="inner">
+							<a href="#">
+								<img src="image.jpg">
+								<span class="tag">MOBILE</span>
+							</a>
+						</div>
+					</li>
+					<li class="pos5">
+						<div class="inner">
+							<img src="image.jpg">
+							<span class="tag"> TABLET</span>
+						</div>
+					</li>
+					
+				</ul>
+				<i class="arrow prev" id="jprev">&lt;</i>
+				<i class="arrow next" id="jnext">&gt;</i>
+			</div>
+		</div>
+	</div>
+ <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="script/jsscript.js"></script>
+		<script>
+			$('#demo').RollingSlider({
+				showArea:"#example",
+				prev:"#jprev",
+				next:"#jnext",
+				moveSpeed:300,
+				autoPlay:false
+			});
+		</script>
+		
+</body>
+</html>
