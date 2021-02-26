@@ -3,8 +3,7 @@
 <head>
 
  <title>Exaze</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
 
@@ -15,7 +14,7 @@
     	body { background-color: #f1f1f1; }
 
 .demo-wrap .demo {
-  width: 1000px;
+  width: 100%;
   height: 450px;
   margin: 0 auto;
   position: relative;
@@ -23,7 +22,7 @@
 }
 
 .slide-wrap {
-  width: 1000px;
+  width: 100%;
   height: 450px;
   margin: 0 auto;
   position: relative;
@@ -37,8 +36,14 @@
   z-index: 0;
   overflow: hidden;
   box-shadow: 0px 10px 20px #888;
-      background: #fff;
-    border: 1px solid #ccc;
+  background: #fff;
+  border: 1px solid #ccc;
+
+}
+
+
+ul li {
+  border-bottom: 5px solid yellow !important; 
 }
 
 .slide-wrap .inner {
@@ -73,12 +78,14 @@
   outline: none;
 }
 
+
+
 .slide-wrap .pos1 {
   display: block;
   width: 180px;
   height: 236px;
   top: 60px;
-  left: 6%;
+  left: 1%;
   z-index: 1;
 }
 
@@ -87,7 +94,7 @@
   width: 220px;
   height: 286px;
   top: 35px;
-  left: 20%;
+  left: 17%;
   z-index: 2;
 }
 
@@ -96,8 +103,9 @@
   width: 300px;
   height: 390px;
   top: 0;
-  left: 35%;
+  left: 36%;
   z-index: 3;
+
 }
 
 .slide-wrap .pos4 {
@@ -105,7 +113,7 @@
   width: 220px;
   height: 286px;
   top: 35px;
-  right: 20%;
+  right: 22%;
   z-index: 2;
 }
 
@@ -130,7 +138,7 @@
   background-color: #384047;
   color: #fff;
   position: absolute;
-  top: 160px;
+  top: 370px;
   z-index: 10;
   cursor: pointer;
   font-size: 30px;
